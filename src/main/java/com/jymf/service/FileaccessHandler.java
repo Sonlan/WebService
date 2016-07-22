@@ -9,14 +9,11 @@ import com.jymf.service.solr.MySolrClient;
 import com.jymf.tool.DownloadTool;
 import com.jymf.tool.JsonTool;
 import com.jymf.tool.MyLogger;
-import com.oracle.javafx.jmx.json.impl.JSONMessages;
 import org.apache.log4j.Logger;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
-import org.apache.zookeeper.proto.GetMaxChildrenRequest;
-
 import java.io.IOException;
-import java.util.Iterator;
+
 
 /**
  * 文件内容获取处理器类,含有文件内容获取操作的主要逻辑

@@ -40,7 +40,7 @@
             <version>1.2</version>
         </dependency>
         <dependency>
-            <groupId>me.stonerivers.manimport</groupId>
+            <groupId>me.manimport</groupId>
             <artifactId>fastdfs-client-java</artifactId>
             <version>1.24</version>
         </dependency>
