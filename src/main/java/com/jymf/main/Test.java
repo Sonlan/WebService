@@ -20,7 +20,7 @@ public class Test {
 
         byte[] requestBytes = new byte[0];
         try {
-            requestBytes = toByteArray("/Users/zhangyuanan/Downloads/upload.txt");
+            requestBytes = toByteArray("E:/Test/upload.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }

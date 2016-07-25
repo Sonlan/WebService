@@ -1,6 +1,4 @@
 package com.jymf.main;
-
-import com.jymf.bean.config.MainConfig;
 import com.jymf.bean.json.UploadDownJson;
 import com.jymf.bean.packet.BasePackage;
 import com.jymf.exception.CrcCheckErrorException;
@@ -12,10 +10,7 @@ import com.jymf.tool.PacketTool;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.log4j.chainsaw.Main;
 import org.zeromq.ZMQ;
-
-import java.util.Arrays;
 
 /**
  * 服务主程序,main函数所在类.
@@ -25,8 +20,8 @@ import java.util.Arrays;
 public class ServerService {
 
     static {
-        PropertyConfigurator.configure("./log4j.properties");
-
+        PropertyConfigurator.configure("log4j.properties");  //打包用
+//        PropertyConfigurator.configure(ServerService.class.getResource("/").getFile()+"log4j.properties");  //本机测试用
     }
 
     //程序入口

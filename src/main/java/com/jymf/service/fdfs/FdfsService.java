@@ -27,8 +27,9 @@ public class FdfsService {
     //加载fdfs配置信息
     static {
         try {
-            //String fdfsConfigPath = FdfsService.class.getResource("/").getFile()+"fdfs_client.conf";
-            String fdfsConfigPath = "./fdfs_client.conf";    // TODO: 16/1/11
+            /*String fdfsConfigPath = FdfsService.class.getResource("/").getFile()+"fdfs_client.conf";
+            System.out.println(fdfsConfigPath);*/  //本机测试用
+            String fdfsConfigPath = "fdfs_client.conf";    // TODO: 打包用
             ClientGlobal.init(fdfsConfigPath);
         } catch (IOException e) {
             e.printStackTrace();

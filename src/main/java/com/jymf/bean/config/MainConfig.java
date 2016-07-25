@@ -20,9 +20,10 @@ public class MainConfig {
         try {
             Properties properties = new Properties();
             //String solrConfigPath = MySolrClient.class.getResource("/").getFile()+"solr_config.properties";
-            String solrConfigPath = "./solr_config.properties";   // TODO: 16/1/11
+            String solrConfigPath = "solr_config.properties";
             InputStream in = new FileInputStream(solrConfigPath);
             properties.load(in);
+//          properties.load(new InputStreamReader(MainConfig.class.getClassLoader().getResourceAsStream("solr_config.properties"), "UTF-8"));//本地测试或打包均可，为便于配置，采用上面的方式
             solrServerUrl = properties.getProperty("SolrServerUrl");
             if (solrServerUrl.endsWith("/")){
                 solrServerUrl = solrServerUrl.substring(0,solrServerUrl.length()-1);
